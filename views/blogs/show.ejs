@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<div class="ui main text container">
+   	    <div class="ui huge header"><%=blog.title%></div>
+        <div class="ui top attached segment">
+	        <div class="item">
+	           <img class="ui centered rounded image" id= "blog-image" src="<%= blog.image %>">
+	            <div class="blog-content">
+	                <div class="meta">
+	                    <span > <img class= "author-image" src="<%= blog.author.displayPic[0].value %>"> </span><br>
+	                    <span > By <strong><%= blog.author.name %></strong></span><br>
+    	                <span class = "date"><%= blog.created.toDateString() %></span>
+    	                
+	                </div>
+            	     <div class="description">
+            	        <p><%- blog.body %></p>
+            	     </div>
+	            </div>
+            </div>
+            <% if(currentUser && blog.author.id.equals(currentUser._id)){ %>
+            
+            <a href="/blogs/<%=blog._id%>/edit" class = "ui small orange button" >Edit</a>
+            <form style="display: inline" method="POST" action="/blogs/<%=blog._id%>?_method=DELETE">
+                <button  type="submit" class = "ui small red  button">Delete</button>
+            </form>
+            <br>
+            <a href= "/blogs" id = "back-button" class = "ui floated teal button"><i class = "left chevron icon"></i>Back</a>
+            
+            <% } %>
+        </div>
+        
+    </div>
+
+
+
+
+<% include ../partials/footer %>

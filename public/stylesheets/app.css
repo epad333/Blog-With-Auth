@@ -1,0 +1,72 @@
+.content{
+    margin-top: 7em;
+}
+body{
+    background-color: #2d333d;
+    
+}
+.red.message{
+    text-align: center;
+}
+.ui.huge.header{
+    color:white;
+}
+
+#blog-image{
+    max-height: 50vh;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+    
+}
+
+#twitter-image{
+    border-radius: 10px;
+}
+.index-blog-image{
+    border-radius: 20px;
+}
+.blog-content{
+    margin-top: 15px;
+}
+
+    
+.ui.huge.header.new-post{
+    color:#2d333d;
+}
+.ui.main.text.container.login{
+    text-align: center;
+}
+.meta{
+    margin-bottom: 15px;
+}
+
+.ui.orange.button{
+    margin-top:20px;
+    
+}
+#back-button{
+    margin-top: 15px;
+}
+
+.author-image{
+    border-radius: 10px;
+}
+
+.not-found{
+    background-color: #100847;
+    
+}
+.nf-card{
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+.ui.main.text.container.flash-messages{
+    margin-bottom: 20px;
+}

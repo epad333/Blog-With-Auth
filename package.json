@@ -1,0 +1,28 @@
+{
+  "name": "blog_with_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "epad333",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-sanitizer": "^1.0.5",
+    "express-session": "^1.15.6",
+    "find-or-create": "^1.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.19",
+    "mongoose-findorcreate": "^3.0.0",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4",
+    "session": "^0.1.0"
+  }
+}
